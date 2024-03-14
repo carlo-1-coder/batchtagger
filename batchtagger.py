@@ -29,11 +29,11 @@ def main():
 
         prediction = np.array([0])
         if st.button('Make Prediction'):
-            prediction = loaded_model.predict(df)
+            prediction = model.predict(df)
             st.write('Prediction:', prediction)
 
         # Make predictions using the loaded model
-        # predictions = loaded_model.predict(df)
+        # predictions = model.predict(df)
 
         # Add the predictions as a new column in the DataFrame
         df['Predictions'] = prediction
